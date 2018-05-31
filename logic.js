@@ -33,7 +33,7 @@ var userInfo = [
         name: 'Gina',
         age: 21,
         salary: 16000
-    },
+    }
 ];
 
 // On load, show metric
@@ -54,7 +54,6 @@ $("#by_salary").on("click", function () {
 //----------------------------------------------------
 // SORT FUNCTIONS
 //----------------------------------------------------
-
 // Sort by age
 function sortByAge() {
     // Clear this section before plotting new data
@@ -85,7 +84,7 @@ function sortByAge() {
 
         // Set width of new class
         // Set the percentage of the current value out of the array's highest value, which is 100%
-        $(newClass).css("width", byAgeArr[prop1].age*100/highestVal + "%");
+        $(newClass).css("width", byAgeArr[prop1].age * 100 / highestVal + "%");
     };
 };
 
@@ -119,7 +118,7 @@ function sortBySalary() {
 
         // Set width of new class
         // Set the percentage of the current value represents out of the array's highest value, which is 100%
-        $(newClass).css("width", bySalaryArr[prop1].salary*100/highestVal + "%");
+        $(newClass).css("width", bySalaryArr[prop1].salary * 100 / highestVal + "%");
     };
 };
 
